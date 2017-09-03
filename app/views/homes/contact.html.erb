@@ -1,0 +1,35 @@
+<br> <br> <br> <br>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <%= form_for @contact, url: contacts_path(@contact), html: {method: :post} do |f| %>
+        <div class="form-group">
+          <%= f.text_field :name, class: 'form-control', placeholder: 'Name' %>
+        </div>
+        <div class="form-group">
+          <%= f.text_field :address, class: 'form-control', placeholder: 'Address' %>
+        </div>
+        <div class="form-group">
+          <%= f.text_field :phone, class: 'form-control', placeholder: 'Phone' %>
+        </div>
+        <div class="form-group">
+          <%= f.text_field :email, class: 'form-control', placeholder: 'Email' %>
+        </div>
+        <div class="form-group">
+          <%= f.text_area :content, class: 'form-control', placeholder: 'Content' %>
+        </div>
+        <%= f.submit "Submit", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+    <div class="col-8">
+      <h3>
+        BlakMarket shop
+      </h3>
+      <p> Address: 194/31 lê quốc hưng phường 12 quận 4 </p>
+      <p> Hotline: 0122.900.6399 </p>
+      <p> Email: vilden2609@gmail.com </p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.635090591103!2d106.70359231480062!3d10.762580992330903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f6958a709a7%3A0x3fa2b87afe7f47b7!2zMTk0LzMxIEzDqiBRdeG7kWMgSMawbmcsIHBoxrDhu51uZyAxMiwgUXXhuq1uIDQsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1504442886412" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
