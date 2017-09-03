@@ -2,6 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-4">
+      <h3>Contact us </h3>
       <%= form_for @contact, url: contacts_path(@contact), html: {method: :post} do |f| %>
         <div class="form-group">
           <%= f.text_field :name, class: 'form-control', placeholder: 'Name' %>
