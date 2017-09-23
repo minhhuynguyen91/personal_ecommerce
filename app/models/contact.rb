@@ -1,8 +1,3 @@
 class Contact < ApplicationRecord
-  
-  def new
-  end
-  
-  def create
-  end
+  validates :name, :address, :phone, :email, :content, presence: true 
 end

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/about', to: 'homes#about'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :products, only: [:index]
+  resources :products
   resources :order_items, only: [:create, :update, :destroy]
   resources :contacts, only: [:create, :new]
 

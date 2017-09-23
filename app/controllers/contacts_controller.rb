@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
       redirect_to "/contact"
     else
       flash[:error] = @contact.errors.full_messages.to_sentence
-      render "/contact"
+      render "homes/contact"
     end
   end
 
